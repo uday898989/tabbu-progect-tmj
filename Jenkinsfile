@@ -56,7 +56,7 @@ pipeline {
 
           stage('Stage-9 : Deployment - Deploy a Artifact devops-3.0.0-SNAPSHOT.war file to Tomcat Server') { 
             steps {
-                sh 'curl -u admin:Str0ngAdminPassw3rd -T target/**.war "http://13.232.16.38:8080/manager/text/deploy?path=/devops&update=true"'
+                sh 'curl -u admin:admin -T target/**.war "http://13.232.16.38:8080/manager/text/deploy?path=/devops&update=true"'
             }
         } 
   

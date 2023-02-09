@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>in.ashokit</groupId>
+  <artifactId>01-maven-web-app</artifactId>
+  <packaging>war</packaging>
+  <version>3.0-SNAPSHOT</version>
+  <name>01-maven-web-app</name>
+  <url>http://maven.apache.org</url>
+        <properties>
+		<!-- SonarQube Integration -->
+		<sonar.organization>bharat1016</sonar.organization>
+		<sonar.projectKey>ashok1996</sonar.projectKey>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<sonar.login>06ff7f816422bb75a7788d248bfbdaa3662afe97</sonar.login>
+	</properties>
+  <distributionManagement> 
+    <snapshotRepository>
+        <id>default-libs-snapshot-local</id>
+        <name>default-libs-snapshot-local</name>
+        <url>https://chethangolla.jfrog.io/artifactory/default-libs-snapshot-local/</url>
+    </snapshotRepository>
+</distributionManagement>
+ 
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>01-maven-web-app</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.1</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>

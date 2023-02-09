@@ -1,9 +1,10 @@
-pipeline {
+pipeline{
 	agent any 
-	tools {
+	tools
+//	{
 	maven 'MAVEN'
 	jdk 'JAVA'
-	}
+//	}
 	stages {
 	
 	stage('Stage-0 : Static Code Analysis Using SonarQube') { 

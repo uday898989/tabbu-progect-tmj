@@ -8,7 +8,7 @@ pipeline {
         }
         stage('checkout') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/ashok2111/webapp-jmaven-java.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Thabrezmd/Deploy_java_app_tomcat.git']]])
             }
         }        
         stage('Clean') {
